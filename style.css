@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(135deg, #fff1f5, #fce4ec, #fff7fa);
+  color: #4a2732;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.hearts {
+  position: fixed;
+  top: 12px;
+  width: 100%;
+  text-align: center;
+  color: #d96b8a;
+  letter-spacing: 25px;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 15px 45px rgba(100, 40, 60, 0.15);
+  text-align: center;
+}
+
+.small {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #b65d78;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: clamp(35px, 7vw, 62px);
+  margin: 10px 0 20px;
+  color: #a94768;
+}
+
+h2 {
+  color: #a94768;
+  margin-top: 35px;
+}
+
+.message {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hint {
+  color: #80606a;
+  font-size: 14px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-box {
+  aspect-ratio: 1 / 1;
+  border: 2px dashed #d98aa0;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.photo-box input {
+  display: none;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.photo-box img.has-photo {
+  display: block;
+}
+
+.photo-box span {
+  color: #b65d78;
+  font-size: 16px;
+}
+
+.note {
+  background: #fff1f5;
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  line-height: 1.7;
+}
+
+button {
+  border: 0;
+  background: #b95778;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+button:hover {
+  background: #963e5f;
+}
+
+#surprise {
+  min-height: 25px;
+  color: #a94768;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 30px;
+  color: #a47783;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 25px 18px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-box {
+    max-width: 280px;
+    width: 100%;
+    margin: auto;
+  }
+}

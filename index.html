@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts">♡ ♡ ♡</div>
+
+  <main class="card">
+    <p class="small">A little something for you</p>
+    <h1>Happy Boyfriend's Day ♡</h1>
+
+    <p class="message">
+      I made this little page just for you.
+      Thank you for being such an important part of my life.
+      I hope this makes you smile today :)
+    </p>
+
+    <section>
+      <h2>Our memories 📸</h2>
+      <p class="hint">Click a photo box to choose a picture from your phone or computer.</p>
+
+      <div class="gallery">
+        <label class="photo-box">
+          <input type="file" accept="image/*" onchange="showPhoto(this, 'photo1')">
+          <img id="photo1" alt="Add a photo">
+          <span>＋ Add photo</span>
+        </label>
+
+        <label class="photo-box">
+          <input type="file" accept="image/*" onchange="showPhoto(this, 'photo2')">
+          <img id="photo2" alt="Add a photo">
+          <span>＋ Add photo</span>
+        </label>
+
+        <label class="photo-box">
+          <input type="file" accept="image/*" onchange="showPhoto(this, 'photo3')">
+          <img id="photo3" alt="Add a photo">
+          <span>＋ Add photo</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="note">
+      <h2>A note for you 💌</h2>
+      <p>
+        Out of all the little moments we've shared, I hope there are many more
+        memories waiting for us. Happy Boyfriend's Day! ♡
+      </p>
+    </section>
+
+    <button onclick="makeHearts()">Click me ♡</button>
+    <p id="surprise"></p>
+
+    <footer>Made with love ♡</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
